@@ -16,8 +16,8 @@ can = \
 Canvas(window, width = WIDTH, height = WIDTH, bg='darkblue')
 
 # Image setup
-bg_img = PhotoImage(file = "/home/mlp15/bin/bg_bubble.gif")
-img = PhotoImage(file = "/home/mlp15/bin/bubsub2.gif")
+bg_img = PhotoImage(file = "bg_bubble.gif")
+img = PhotoImage(file = "bubsub2.gif")
 #play_img = PhotoImage(file = "play_btn.gif" )
 small_img = PhotoImage.subsample(img, x = 1, y = 1)
 
@@ -148,7 +148,7 @@ def show_time(time_left):
     can.itemconfig(time_text, text=str(time_left))  
 
 # Setup for the high score
-target = open('/home/mlp15/bin/high_score')
+target = open('high_score')
 r = target.readline()
 # Creating the high score text
 can.create_rectangle(650, 0, 950, 150, fill="grey")
@@ -163,7 +163,7 @@ def show_new_high():
 # Saving the high score by writing it
 # to the file 'high_score'
 def save():
-    target = open('/home/mlp15/bin/high_score', 'w')
+    target = open('high_score', 'w')
     target.write(str(score))
 
 # Setup for the main loop    
