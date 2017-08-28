@@ -6,9 +6,9 @@ If you try running this in python 2
 you will get an import error
 
 to controll the sub:
-the most obvious controlls imaginable
+the most obvious controlls imaginable,
 Up
 Down
 Left
-Right
+Right and 
 q to quit
